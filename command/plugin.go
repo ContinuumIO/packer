@@ -68,6 +68,7 @@ import (
 	shelllocalprovisioner "github.com/hashicorp/packer/provisioner/shell-local"
 	windowsrestartprovisioner "github.com/hashicorp/packer/provisioner/windows-restart"
 	windowsshellprovisioner "github.com/hashicorp/packer/provisioner/windows-shell"
+	lxcbuilder "github.com/mitchellh/packer/builder/lxc"
 )
 
 type PluginCommand struct {
@@ -88,6 +89,7 @@ var Builders = map[string]packer.Builder{
 	"file":                new(filebuilder.Builder),
 	"googlecompute":       new(googlecomputebuilder.Builder),
 	"hyperv-iso":          new(hypervisobuilder.Builder),
+	"lxc":                 new(lxcbuilder.Builder),
 	"null":                new(nullbuilder.Builder),
 	"oneandone":           new(oneandonebuilder.Builder),
 	"openstack":           new(openstackbuilder.Builder),
