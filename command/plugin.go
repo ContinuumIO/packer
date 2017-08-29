@@ -26,6 +26,7 @@ import (
 	filebuilder "github.com/hashicorp/packer/builder/file"
 	googlecomputebuilder "github.com/hashicorp/packer/builder/googlecompute"
 	hypervisobuilder "github.com/hashicorp/packer/builder/hyperv/iso"
+	lxcbuilder "github.com/hashicorp/packer/builder/lxc"
 	nullbuilder "github.com/hashicorp/packer/builder/null"
 	oneandonebuilder "github.com/hashicorp/packer/builder/oneandone"
 	openstackbuilder "github.com/hashicorp/packer/builder/openstack"
@@ -68,7 +69,6 @@ import (
 	shelllocalprovisioner "github.com/hashicorp/packer/provisioner/shell-local"
 	windowsrestartprovisioner "github.com/hashicorp/packer/provisioner/windows-restart"
 	windowsshellprovisioner "github.com/hashicorp/packer/provisioner/windows-shell"
-	lxcbuilder "github.com/mitchellh/packer/builder/lxc"
 )
 
 type PluginCommand struct {

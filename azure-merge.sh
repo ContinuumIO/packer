@@ -1,4 +1,4 @@
-PACKER=$GOPATH/src/github.com/mitchellh/packer
+PACKER=$GOPATH/src/github.com/hashicorp/packer
 AZURE=/tmp/packer-azure
 
 ls $AZURE >/dev/null || git clone https://github.com/Azure/packer-azure /tmp/packer-azure
